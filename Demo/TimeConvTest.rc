@@ -1,0 +1,271 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About TimeConvTest"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TimeConvTest Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_DATETIMETEST_DIALOG DIALOGEX 0, 0, 370, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Time Conversion v1.1"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Time Conversion - v1.1",IDC_STATIC,7,7,83,13
+    PUSHBUTTON      "Get CurrentTime",IDC_GETSYSTEMTIME,173,13,73,15
+    PUSHBUTTON      "GetLocalTime",IDC_GETLOCALTIME,298,7,65,15,NOT 
+                    WS_VISIBLE
+    GROUPBOX        "Convert from",IDC_STATIC,7,32,239,183
+    RTEXT           "time_t (utc)",IDC_STATIC,21,41,63,12
+    EDITTEXT        IDC_UNIXTIME_UTC,91,41,107,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_UT_UTC,203,41,35,12
+    RTEXT           "time_t (local)",IDC_STATIC,21,59,63,12
+    EDITTEXT        IDC_UNIXTIME,91,58,107,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_UT,203,58,35,12
+    RTEXT           "DosTime",IDC_STATIC,21,80,63,12
+    EDITTEXT        IDC_DOSTIME,91,79,107,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_DT,203,79,35,12
+    RTEXT           "Date",IDC_STATIC,61,96,26,8
+    EDITTEXT        IDC_DOSTIME2,91,95,43,12,ES_AUTOHSCROLL
+    RTEXT           "Time",IDC_STATIC,139,96,19,8
+    EDITTEXT        IDC_DOSTIME3,161,95,37,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_DT2,203,95,35,12
+    RTEXT           "FileTime (UCT)",IDC_STATIC,21,130,63,12
+    EDITTEXT        IDC_FILETIME,91,129,107,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_FT,203,129,35,12
+    RTEXT           "FileTime (local)",IDC_STATIC,21,146,63,12
+    EDITTEXT        IDC_FILETIME_LOCAL,91,145,107,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_FT_LOCAL,203,145,35,12
+    RTEXT           "FileTime (rel.local)",IDC_STATIC,21,161,63,12
+    EDITTEXT        IDC_FILETIME_LOCAL_REF,91,160,107,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_FT_LOCAL_REF,203,160,35,12
+    RTEXT           "FileTime (raw)",IDC_STATIC,21,181,63,12
+    EDITTEXT        IDC_FILETIME_RAW,91,180,107,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_FT_RAW,203,180,35,12
+    RTEXT           "FileTime (raw Lo/Hi)",IDC_STATIC,25,199,63,12
+    EDITTEXT        IDC_FILETIME_RAW_LO,91,198,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILETIME_RAW_HI,147,198,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_FT_RAW_LOHI,203,197,35,12
+    GROUPBOX        "SystemTime",IDC_STATIC,252,32,111,140
+    RTEXT           "Year",IDC_STATIC,269,46,40,10
+    EDITTEXT        IDC_YEAR,313,43,40,14,ES_AUTOHSCROLL
+    RTEXT           "Month",IDC_STATIC,269,61,40,10
+    EDITTEXT        IDC_MONTH,313,59,40,14,ES_AUTOHSCROLL
+    RTEXT           "Day",IDC_STATIC,269,77,40,10
+    EDITTEXT        IDC_DAY,313,74,40,14,ES_AUTOHSCROLL
+    RTEXT           "Hour",IDC_STATIC,269,93,40,10
+    EDITTEXT        IDC_HOUR,313,90,40,14,ES_AUTOHSCROLL
+    RTEXT           "Minute",IDC_STATIC,269,109,40,10
+    EDITTEXT        IDC_MINUTE,313,106,40,14,ES_AUTOHSCROLL
+    RTEXT           "Second",IDC_STATIC,269,126,40,10
+    EDITTEXT        IDC_SECOND,313,122,40,14,ES_AUTOHSCROLL
+    RTEXT           "Millisecond",IDC_STATIC,269,141,40,10
+    EDITTEXT        IDC_MILLISECOND,313,138,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Convert",IDC_GO_ST,290,156,35,12
+    PUSHBUTTON      "Clear",IDC_CLEAR,271,196,67,16
+    DEFPUSHBUTTON   "Close",IDOK,313,223,50,16
+    LTEXT           "Created by Mathias Svensson - Copyright 2007-2008 - http://result42.com",
+                    IDC_STATIC,7,225,286,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TimeConvTest.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "TimeConvTest.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DATETIMETEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About TimeConvTest..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\TimeConvTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TimeConvTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_RT_MANIFEST1        RT_MANIFEST             "res\\rt_manif.bin"
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\TimeConvTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
